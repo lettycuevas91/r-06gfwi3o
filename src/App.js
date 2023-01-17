@@ -12,10 +12,12 @@ class App extends Component {
   }
 
   render() {
-    const names= ["Juan", "Pedro", "Germán"];
+    
     return (
+      
       <div>
-        {this.state.names.map(name =><Welcome name={name} />)}
+        {this.state.names.map(name =><li>{<Welcome name={name} />}</li>
+        )}
       </div>
     );
   }
